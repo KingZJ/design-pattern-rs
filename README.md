@@ -11,3 +11,4 @@
 - [图说设计模式 — Graphic Design Patterns](https://design-patterns.readthedocs.io/zh_CN/latest/index.html)
 - [Design Pattern Catalog](https://java-design-patterns.com/patterns/)
 - [Table of Contents · Game Programming Patterns](http://gameprogrammingpatterns.com/contents.html)
+- [Introduction - Rust Design Patterns](https://rust-unofficial.github.io/patterns/)

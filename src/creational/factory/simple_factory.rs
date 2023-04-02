@@ -50,11 +50,13 @@ impl ChartFactory {
 }
 
 pub fn get_chart(chart_type: ChartType) -> Box<dyn Chart> {
-    match chart_type {
-        ChartType::LineChart => Box::new(LineChart {}),
-        ChartType::PieChart => Box::new(PieChart {}),
-        ChartType::BarChart => Box::new(BarChart {}),
-    }
+    // match chart_type {
+    //     ChartType::LineChart => Box::new(LineChart {}),
+    //     ChartType::PieChart => Box::new(PieChart {}),
+    //     ChartType::BarChart => Box::new(BarChart {}),
+    // }
+
+    ChartFactory::get_chart(chart_type)
 }
 
 #[cfg(test)]
