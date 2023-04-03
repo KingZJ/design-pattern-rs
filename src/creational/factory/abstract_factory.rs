@@ -98,7 +98,7 @@ impl Sect for AssassinSect {
 
 #[cfg(test)]
 mod test {
-    use super::{AssassinSect, SwordsmanSect, Sect};
+    use super::{AssassinSect, Sect, SwordsmanSect};
 
     #[test]
     fn abstract_factory_test() {
