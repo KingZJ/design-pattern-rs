@@ -22,14 +22,16 @@ impl Subject for Proxy {
 
 #[cfg(test)]
 mod test {
-    use super::{RealSubject, Proxy, Subject};
+    use super::{Proxy, RealSubject, Subject};
 
     #[test]
     fn proxy_test() {
+        // 注意与适配器模式的区别，代理模式客户端使用时只关注代理类
+        // 代理类中有功能增强也认为是目标类提供的
         let proxy = Proxy {
-            real: RealSubject {}
+            real: RealSubject {},
         };
 
-        assert_eq!("pre-real-after", proxy.operation())
+        assert_eq!("pre-real-after", proxy.operation());
     }
 }
